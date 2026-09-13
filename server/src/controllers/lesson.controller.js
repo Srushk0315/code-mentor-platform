@@ -4,7 +4,7 @@ const ApiError= require('../utils/ApiError');
 const pool= require('../config/db');
 
 const getLessons=asyncHandler(async(req,res)=>{
-    const result=await pool.query("SELECT * FROM lessons ORDER BY ID");
+    const result=await pool.query("SELECT * FROM lessons ORDER BY sequence_no");
 
     if (!result.rows) {
         throw new ApiError(500, "Failed to fetch lessons");
