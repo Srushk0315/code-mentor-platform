@@ -1,8 +1,8 @@
-const express=require("express");
-const {getPaste_events}=require("../controllers/paste_events.controller");
+// GET /api/paste_events — copy-paste events from the editor
+const express = require('express');
+const { getPaste_events } = require('../controllers/paste_events.controller');
 
-const router=express.Router();
-
-router.get("/",getPaste_events);
+const router = express.Router();
+router.get('/', getPaste_events);
 
 module.exports = router;
