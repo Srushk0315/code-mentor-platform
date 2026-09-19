@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import "tailwindcss";
 
+=======
+>>>>>>> 2c2d98a1ee9022d28372b76396ad874d134e0972
 * {
   box-sizing: border-box;
 }
@@ -7,6 +10,7 @@
 html,
 body,
 #root {
+<<<<<<< HEAD
   margin: 0;
   min-height: 100%;
   width: 100%;
@@ -16,4 +20,13 @@ body {
   font-family: Arial, sans-serif;
   background: #07111f;
   color: white;
+=======
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+>>>>>>> 2c2d98a1ee9022d28372b76396ad874d134e0972
 }
